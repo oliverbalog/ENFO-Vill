@@ -4,7 +4,7 @@ import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
 import Components from "./views/Components.vue";
 import Home from "./views/Home.vue";
-import Login from "./views/Login.vue";
+import Energyopt from "./views/Energyopt.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
 
@@ -32,11 +32,11 @@ export default new Router({
       }
     },
     {
-      path: "/login",
-      name: "login",
+      path: "/energyopt",
+      name: "energyopt",
       components: {
         header: AppHeader,
-        default: Login,
+        default: Energyopt,
         footer: AppFooter
       }
     },

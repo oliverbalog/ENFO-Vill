@@ -68,7 +68,7 @@ $colors: map-merge((
 ), $colors);
 
 $default:       #172b4d !default;
-$primary:       #5e72e4 !default;
+$primary:       rgb(24, 164, 192) !default;
 $secondary:     #f4f5f7 !default;
 $success:       $green !default;
 $info:          $teal !default;
@@ -197,7 +197,7 @@ $love-color: $red !default;
 
 // Body
 
-$body-bg: $white !default;
+$body-bg: rgb(255, 255, 255) !default;
 $body-color: $gray-700 !default;
 
 
@@ -805,7 +805,7 @@ $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .05);
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
 $card-cap-bg:                       $gray-100 !default;
-$card-bg:                           $white !default;
+$card-bg:                           rgba(255, 255, 255) !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 
@@ -881,7 +881,7 @@ $datepicker-highlighted-bg: $datepicker-active-background !default;
 
 $footer-link-font-size: .85rem !default;
 $footer-bg: theme-color("secondary") !default;
-$footer-color: $gray-600 !default;
+$footer-color: $gray-100 !default;
 $footer-link-color: $gray-600 !default;
 $footer-link-hover-color: $gray-700 !default;
 $footer-heading-color: $gray-600 !default;

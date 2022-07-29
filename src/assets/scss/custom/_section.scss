@@ -44,14 +44,13 @@
 }
 
 .section-shaped-1{
-    height: fit-content !important;
-    min-height: 80vh !important;
+    min-height: 40vh !important;
     display: flex !important;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background-image: url("/img/bg_smarthome.png");
+/*     background-image: url("/img/bg_bulb2.jpg") !important;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     h2, p{
     color: white !important;}
 }
