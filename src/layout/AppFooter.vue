@@ -1,46 +1,57 @@
 <template>
-    <footer class="footer">
-        
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-md-between">
-                <div class="col-md-6">
-                    <div class="copyright">
-                        &copy; {{year}}
-                        <a href="https://www.creative-tim.com" target="_blank" rel="noopener">Creative Tim</a> & <a href="https://www.binarcode.com" target="_blank" rel="noopener">Binar Code</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav nav-footer justify-content-end">
-                        <li class="nav-item">
-                            <a href="https://www.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Creative Tim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank" rel="noopener">About
-                                Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="http://blog.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                               class="nav-link" target="_blank" rel="noopener">MIT License</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; {{ year }}
+            <a href="" target="_blank" rel="noopener">ENFO-Vill</a>, Developed:
+            <a href="https://www.olivers.hu" target="_blank" rel="noopener"
+              >Balog Olivér</a
+            >
+          </div>
         </div>
-    </footer>
+        <div class="col-md-6">
+          <ul class="nav nav-footer justify-content-end">
+            <li class="nav-item">
+              <router-link to="/Energyopt" class="nav-link"
+                >Energia felhasználás optimalizálás
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/system_improve" class="nav-link"
+                >Rendszer korszerűsítés</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link to="/smarthome" class="nav-link"
+                >Okos otthon rendszerek</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link to="/boiler" class="nav-link"
+                >Villanybojler karbantartás, telepítés</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link to="/electric" class="nav-link"
+                >Elektromos hálózat és berendezés karbantartás</router-link
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 <script>
 export default {
-  name: 'app-footer',
+  name: "app-footer",
   data() {
     return {
-      year: new Date().getFullYear()
-    }
-  }
+      year: new Date().getFullYear(),
+    };
+  },
 };
 </script>
-<style>
-    
-</style>
+<style></style>

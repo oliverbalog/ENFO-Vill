@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "postbuild": "react-snap",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy": "sh deploy.sh"
@@ -24,8 +25,17 @@
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-plugin-pwa": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
+    "react-snap": "^1.23.0",
     "sass": "^1.54.0",
     "sass-loader": "^7.1.0",
+    "sitemap-webpack-plugin": "^1.1.1",
     "vue-template-compiler": "^2.6.6"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    }
   }
 }

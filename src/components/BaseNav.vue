@@ -14,22 +14,21 @@
         {{ title }}
       </a>
     </slot>
-    <div class="col-6 info">
+    <div class="col-xl-4 col info">
       <div class="row">
-        <div class="col-6">
-          <a class="link-reach" href="">
+        
+          <a class="link-reach phone-tag" href="" style="margin-right:1em;">
             <i class="ni ni-mobile-button mr-1"> </i>
             <span style="color:white !important;">+36-20-669-9150</span>
           </a>
-        </div>
-        <div class="col-6" style="display: flex; justify-content: center; align-items: center;">
-          <a class="link-reach" href="">
+        
+          <a class="link-reach email-tag" href="">
             <i class="ni ni-email-83 mr-1"> </i>
             <span style="color:white !important; margin:auto;">
               info@enfo-vill.hu
             </span>
           </a>
-        </div>
+        
       </div>
     </div>
     <navbar-toggle-button
@@ -127,10 +126,14 @@ export default {
   display: flex !important;
   align-content: center !important;
   padding: 0 !important;
+  backdrop-filter: blur(5px);
 }
 
-@media screen and (max-width: 600px) {
-  .info {
+@media screen and (max-width: 769px) {
+  /* .info {
+    display: none;
+  } */
+  .email-tag{
     display: none;
   }
 }

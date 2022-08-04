@@ -25,13 +25,15 @@
         </span>
         </div>
         <slot v-bind="slotData">
-            <input
+            <textarea
+            cols="5"
+            rows="5"
                     :value="value"
                     v-on="listeners"
                     v-bind="$attrs"
-                    class="form-control"
+                    class="form-control custom-textfield"
                     :class="[{'is-valid': valid === true}, {'is-invalid': invalid === true}, inputClasses]"
-                    aria-describedby="addon-right addon-left">
+                    aria-describedby="addon-right addon-left"/>
         </slot>
         <div v-if="addonRightIcon || $slots.addonRight" class="input-group-append">
           <span class="input-group-text">
@@ -51,7 +53,7 @@
 <script>
 export default {
   inheritAttrs: false,
-  name: "base-input",
+  name: "custom-textfield",
   props: {
     required: {
       type: Boolean,
@@ -147,4 +149,10 @@ export default {
 };
 </script>
 <style>
+.custom-textfield::placeholder{
+    line-height: 7.5em;
+}
+.custom-textfield{
+    resize: none;
+}
 </style>

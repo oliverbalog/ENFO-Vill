@@ -22,18 +22,26 @@
           <a
             slot="title"
             href="#"
-            class="nav-link"
+            class="nav-link servicesspan"
             data-toggle="dropdown"
             role="button"
           >
-            <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text">Szolgáltatások</span>
           </a>
-          <router-link to="/home" class="dropdown-item">Landing</router-link>
-          <router-link to="/profile" class="dropdown-item">Profile</router-link>
-          <router-link to="/login" class="dropdown-item">Login</router-link>
-          <router-link to="/register" class="dropdown-item"
-            >Register</router-link
+          <router-link to="/Energyopt" class="dropdown-item"
+            >Energia felhasználás optimalizálás
+          </router-link>
+          <router-link to="/system_improve" class="dropdown-item"
+            >Rendszer korszerűsítés</router-link
+          >
+          <router-link to="/smarthome" class="dropdown-item"
+            >Okos otthon rendszerek</router-link
+          >
+          <router-link to="/boiler" class="dropdown-item"
+            >Villanybojler karbantartás, telepítés</router-link
+          >
+          <router-link to="/electric" class="dropdown-item"
+            >Elektromos hálózat és berendezés karbantartás</router-link
           >
         </base-dropdown>
       </ul>

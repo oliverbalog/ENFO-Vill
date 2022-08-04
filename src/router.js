@@ -2,11 +2,12 @@ import Vue from "vue";
 import Router from "vue-router";
 import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
-import Components from "./views/Components.vue";
 import Home from "./views/Home.vue";
 import Energyopt from "./views/Energyopt.vue";
-import Register from "./views/Register.vue";
-import Profile from "./views/Profile.vue";
+import Boiler from "./views/Boiler.vue";
+import SysImprove from "./views/SysImprove.vue";
+import Smarthome from "./views/Smarthome.vue";
+import Electric from "./views/Electric.vue";
 
 Vue.use(Router);
 
@@ -41,20 +42,38 @@ export default new Router({
       }
     },
     {
-      path: "/register",
-      name: "register",
+      path: "/electric",
+      name: "Electric",
       components: {
         header: AppHeader,
-        default: Register,
+        default: Electric,
         footer: AppFooter
       }
     },
     {
-      path: "/profile",
-      name: "profile",
+      path: "/boiler",
+      name: "Boiler",
       components: {
         header: AppHeader,
-        default: Profile,
+        default: Boiler,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/system_improve",
+      name: "SysImprove",
+      components: {
+        header: AppHeader,
+        default: SysImprove,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/smarthome",
+      name: "Smarthome",
+      components:{
+        header: AppHeader,
+        default: Smarthome,
         footer: AppFooter
       }
     }

@@ -92,21 +92,6 @@
             opacity: 0; 
             pointer-events: none;
             margin: 0;
-
-            &:before {
-                background: $dropdown-bg;
-                box-shadow: none;
-                content: '';
-                display: block;
-                height: 16px;
-                width: 16px;
-                left: 20px;
-                position: absolute;
-                bottom: 100%;
-                transform: rotate(-45deg) translateY(1rem);
-                z-index: -5;
-                border-radius: $border-radius-sm;
-            }
         }
 
         .dropdown-menu-right {
@@ -227,9 +212,12 @@
         }
 
         .dropdown-menu {
-            box-shadow: 0 0 10px 1px black;
+            box-shadow: 0 0 0px 0px black;
             min-width: auto;
-            background-color: grey;
+            background-color: inherit;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            display: block;
 
             .media {
                 svg {
